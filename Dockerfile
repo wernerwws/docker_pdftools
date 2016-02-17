@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 MAINTAINER Werner Schmid
 
-RUN apt-get update && apt-get install -y pdftk wget ssmtp mailutils emacs24-nox imagemagick sam2p bc unoconv poppler-utils zip texlive-full fdupes
+RUN apt-get update && apt-get install -y pdftk wget ssmtp mailutils emacs24-nox imagemagick sam2p bc unoconv poppler-utils zip fdupes texlive-full
 COPY grep.sh /scripts/grep.sh
 COPY merge-file-lists.sh /scripts/merge-file-lists.sh
 COPY sendmail-attachment.sh /scripts/sendmail-attachment.sh
