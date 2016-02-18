@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{transparent}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{lmodern}
+
+\pdfoptionpdfminorversion 7
+\pdfpageattr {/Group << /S /Transparency /I true /CS /DeviceRGB>>}
+\title{Sample document for the draftwatermark package}
+
+\begin{document}
+\color{###COLOR###}%
+\transparent{###TRANSPARENCY###}
+\clearpage
+\pagenumbering{gobble}
+\vspace*{\fill}
+\begin{center}
+{\fontsize{###FONTSIZE###}{8} \selectfont \rotatebox{###ROTATION###}{\bf \sffamily ###TEXT###}}
+\end{center}
+\vfill % equivalent to \vspace{\fill}
+\clearpage
+\end{document}

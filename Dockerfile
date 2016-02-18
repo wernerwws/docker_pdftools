@@ -7,3 +7,4 @@ COPY merge-file-lists.sh /scripts/merge-file-lists.sh
 COPY sendmail-attachment.sh /scripts/sendmail-attachment.sh
 COPY image-to-pdf.sh /scripts/image-to-pdf.sh
 COPY create-watermark.sh /scripts/create-watermark.sh
+COPY watermark.tex /scripts/watermark.tex
